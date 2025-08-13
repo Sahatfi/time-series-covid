@@ -1,5 +1,9 @@
 # COVID-19 Mortality Forecasting: A Time Series Analysis
 
+**Project by:** Filip Sahatqija | [Your LinkedIn/GitHub Profile](https://www.linkedin.com/in/filip-sahatqija-474661207/)
+
+**Domain:** Data Analysis & Epidemiology | Self-Initiated Research
+
 ## Overview
 
 This project presents a comprehensive time series analysis and forecast of COVID-19 mortality in Norway. Using publicly available data from 1 January 2020 to 10 April 2021, the analysis compares mortality and incidence patterns between Slovakia and Norway. The primary goal is to develop a predictive model that forecasts weekly deaths based on past mortality data and case incidence.
@@ -57,9 +61,9 @@ The analysis was conducted in Python using `pandas`, `statsmodels`, and `pmdarim
 
 These results demonstrate that **timely COVID-19 case surveillance can provide early warning for mortality surges.** In practice, this can help:
 
-Anticipate hospital capacity needs.
-Guide resource allocation.
-Support targeted public health interventions.
+- Anticipate hospital capacity needs.
+- Guide resource allocation.
+- Support targeted public health interventions.
 
 ---
 
@@ -84,6 +88,4 @@ To replicate this analysis, please follow these steps:
 4.  **Run the Jupyter Notebook:**
     Launch Jupyter and open the `time-series-covid.ipynb` notebook located in the `notebooks/` directory.
     
-    
-    
-    Author: [Filip Sahatqija] — All analysis, modeling, and visualization conducted as part of a self-initiated research project combining epidemiology and data science.
+    ---
