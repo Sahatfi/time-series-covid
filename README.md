@@ -43,14 +43,23 @@ The analysis was conducted in Python using `pandas`, `statsmodels`, and `pmdarim
 ## Key Findings
 
 1.  **Different Pandemic Trajectories:** Slovakia experienced significantly higher peaks in both case incidence and mortality compared to Norway during the analyzed period.
-![Weekly difference between in deaths between norway and slovakia](/images/weekly_difference_plot.png)
+![Weekly difference in deaths between Norway and Slovakia.](/images/weekly_difference_plot.png)
 2.  **Cases Predict Deaths:** The ARIMAX model confirmed that COVID-19 case numbers are a statistically significant predictor of deaths.
 3.  **Optimal Lag Period:** The most effective model was an **ARIMAX(2,0,1) model using a one-week lag** between reported cases and deaths. This model provided the best balance of predictive accuracy and statistical significance.
 ![One-week lag between cases and deaths](/images/lag1.png)
 4.  **Model Diagnostics:** Despite one major outlier in the first week of prediction, the final model's residuals were found to be homoscedastic and free of autocorrelation, indicating a robust and reliable fit.
-![QQ plot with outlayer](/images/qq_plot_full.png)
-![QQ plot without outlayer](/images/qq_plot.png)
+![QQ plot with outlier](/images/qq_plot_full.png)
+![QQ plot without outlier](/images/qq_plot.png)
 5. **Model Diagnostics:** The final model was very accurate, with a Mean Absolute Percentage Error (MAPE) of just 8.6%. **This means the model's weekly forecast was, on average, off by only 8.6% from the actual number of deaths.**
+
+---
+## Public Health Implications
+
+These results demonstrate that **timely COVID-19 case surveillance can provide early warning for mortality surges.** In practice, this can help:
+
+Anticipate hospital capacity needs.
+Guide resource allocation.
+Support targeted public health interventions.
 
 ---
 
@@ -74,3 +83,7 @@ To replicate this analysis, please follow these steps:
     ```
 4.  **Run the Jupyter Notebook:**
     Launch Jupyter and open the `time-series-covid.ipynb` notebook located in the `notebooks/` directory.
+    
+    
+    
+    Author: [Filip Sahatqija] — All analysis, modeling, and visualization conducted as part of a self-initiated research project combining epidemiology and data science.
