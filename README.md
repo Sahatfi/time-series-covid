@@ -46,7 +46,7 @@ The analysis was conducted in Python using `pandas`, `statsmodels`, and `pmdarim
 ![Weekly difference between in deaths between norway and slovakia](/images/weekly_difference_plot.png)
 2.  **Cases Predict Deaths:** The ARIMAX model confirmed that COVID-19 case numbers are a statistically significant predictor of deaths.
 3.  **Optimal Lag Period:** The most effective model was an **ARIMAX(2,0,1) model using a one-week lag** between reported cases and deaths. This model provided the best balance of predictive accuracy and statistical significance.
-![One-week lag between cases and deaths](images/lag1.png)
+![One-week lag between cases and deaths](images/qq_plot_full.png)
 4.  **Model Diagnostics:** Despite one major outlier in the first week of prediction, the final model's residuals were found to be homoscedastic and free of autocorrelation, indicating a robust and reliable fit.
 ![QQ plot with outlayer](images/qq_plot_full.png)
 ![QQ plot without outlayer](images/qq_plot.png)
