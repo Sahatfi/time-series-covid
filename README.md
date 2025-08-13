@@ -48,8 +48,8 @@ The analysis was conducted in Python using `pandas`, `statsmodels`, and `pmdarim
 3.  **Optimal Lag Period:** The most effective model was an **ARIMAX(2,0,1) model using a one-week lag** between reported cases and deaths. This model provided the best balance of predictive accuracy and statistical significance.
 ![One-week lag between cases and deaths](images/lag1.png)
 4.  **Model Diagnostics:** Despite one major outlier in the first week of prediction, the final model's residuals were found to be homoscedastic and free of autocorrelation, indicating a robust and reliable fit.
-![QQ plot with outlayer](images/normalQQ.png)
-![QQ plot without outlayer](images/nonormalQQ.png)
+![QQ plot with outlayer](images/qq_plot_full.png)
+![QQ plot without outlayer](images/qq_plot.png)
 5. **Model Diagnostics:** The final model was very accurate, with a Mean Absolute Percentage Error (MAPE) of just 8.6%. **This means the model's weekly forecast was, on average, off by only 8.6% from the actual number of deaths.**
 
 ---
