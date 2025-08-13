@@ -1,6 +1,6 @@
 # COVID-19 Mortality Forecasting: A Time Series Analysis
 
-**Project by:** Filip Sahatqija | [Your LinkedIn/GitHub Profile](https://www.linkedin.com/in/filip-sahatqija-474661207/)
+**Project by:** Filip Sahatqija (https://www.linkedin.com/in/filip-sahatqija-474661207/)
 
 **Domain:** Data Analysis & Epidemiology | Self-Initiated Research
 
