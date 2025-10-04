@@ -53,8 +53,12 @@ The analysis was conducted in Python using `pandas`, `statsmodels`, and `pmdarim
 ![One-week lag between cases and deaths](/images/lag1.png)
 4.  **Model Diagnostics:** Despite one major outlier in the first week of prediction, the final model's residuals were found to be homoscedastic and free of autocorrelation, indicating a robust and reliable fit.
 ![QQ plot with outlier](/images/qq_plot_full.png)
+The original QQ plot shows that the model’s residuals do not follow a normal distribution (the red line). I assumed that the residuals did not show normal distribution because of one single outlier—the first prediction, which had a large error (see the blue dot near the -2 value on the x-axis).
+
 ![QQ plot without outlier](/images/qq_plot.png)
-5. **Model Diagnostics:** The final model was very accurate, with a Mean Absolute Percentage Error (MAPE) of just 8.6%. **This means the model's weekly forecast was, on average, off by only 8.6% from the actual number of deaths.**
+After removing the outlier, the residuals are aligned around the red reference line, indicating a much smaller deviation from normality in the residual distribution.
+
+5. **Model Evaulation:** The final model was very accurate, with a Mean Absolute Percentage Error (MAPE) of just 8.6%. **This means the model's weekly forecast was, on average, off by only 8.6% from the actual number of deaths.**
 
 ---
 ## Public Health Implications
